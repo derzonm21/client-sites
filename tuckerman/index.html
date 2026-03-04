@@ -96,7 +96,7 @@ body {
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  background: url('https://tuckermanhomegroup.com/images/sandover/2450-Sandover-Rd_Exterior.jpg') center/cover no-repeat;
 }
 .hero-pattern {
   position: absolute; inset: 0; opacity: 0.04;
@@ -107,7 +107,7 @@ body {
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65));
 }
 .hero-content {
   position: relative; z-index: 2;
@@ -209,12 +209,8 @@ body {
   position: relative; aspect-ratio: 4/5;
   background: var(--cream); overflow: hidden;
 }
-.intro-image-placeholder {
-  width: 100%; height: 100%;
-  background: linear-gradient(135deg, #e8e4de 0%, #d4cfc6 100%);
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px; color: var(--text-light); font-style: italic;
+.intro-image img {
+  width: 100%; height: 100%; object-fit: cover;
 }
 .intro-image-accent {
   position: absolute; top: -20px; right: -20px;
@@ -280,9 +276,11 @@ body {
 }
 .gallery-item-inner {
   width: 100%; height: 100%;
-  background: linear-gradient(135deg, #3a3a3a 0%, #4a4a4a 50%, #3a3a3a 100%);
-  display: flex; align-items: center; justify-content: center;
+  background: var(--charcoal-light);
   transition: transform 0.6s;
+}
+.gallery-item-inner img {
+  width: 100%; height: 100%; object-fit: cover;
 }
 .gallery-item:hover .gallery-item-inner { transform: scale(1.05); }
 .gallery-item-label {
@@ -473,11 +471,7 @@ body {
   <div class="nav-inner">
     <a href="#" class="nav-logo">
       <div class="nav-logo-icon">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 8L6 28h8v20h32V28h8L30 8z" stroke="#1a6b4a" stroke-width="2.5" fill="none"/>
-          <path d="M24 48V34h12v14" stroke="#1a6b4a" stroke-width="2.5" fill="none"/>
-          <line x1="6" y1="28" x2="54" y2="28" stroke="#1a6b4a" stroke-width="2"/>
-        </svg>
+        <img src="https://tuckermanhomegroup.com/images/logo.png" alt="Tuckerman Home Group Logo" style="width:100%;height:100%;object-fit:contain;">
       </div>
       <div class="nav-logo-text">
         <span>Tuckerman</span>
@@ -554,7 +548,7 @@ body {
         </div>
       </div>
       <div class="intro-image">
-        <div class="intro-image-placeholder">[ Craig Tuckerman Photo ]</div>
+        <img src="https://tuckermanhomegroup.com/images/ce3.jpg" alt="Craig Tuckerman">
         <div class="intro-image-accent"></div>
       </div>
     </div>
@@ -629,28 +623,28 @@ body {
     </div>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <div class="gallery-item-inner"><span class="gallery-item-placeholder">[ Home Image ]</span></div>
-        <div class="gallery-item-label"><span>New Albany</span><h4>The Cheshire</h4></div>
+        <div class="gallery-item-inner"><img src="https://tuckermanhomegroup.com/images/sandover/2450-Sandover-Rd_Exterior.jpg" alt="Sandover Road Custom Home"></div>
+        <div class="gallery-item-label"><span>New Albany</span><h4>2450 Sandover</h4></div>
       </div>
       <div class="gallery-item">
-        <div class="gallery-item-inner"><span class="gallery-item-placeholder">[ Home Image ]</span></div>
+        <div class="gallery-item-inner"><img src="https://tuckermanhomegroup.com/images/3163/WelcomeHome.jpg" alt="Welcome Home"></div>
         <div class="gallery-item-label"><span>Upper Arlington</span><h4>The Yorkshire</h4></div>
       </div>
       <div class="gallery-item">
-        <div class="gallery-item-inner"><span class="gallery-item-placeholder">[ Home Image ]</span></div>
-        <div class="gallery-item-label"><span>Bexley</span><h4>Custom Residence</h4></div>
+        <div class="gallery-item-inner"><img src="https://tuckermanhomegroup.com/images/3519/front.jpg" alt="3519 Redding Front"></div>
+        <div class="gallery-item-label"><span>Upper Arlington</span><h4>3519 Redding</h4></div>
       </div>
       <div class="gallery-item">
-        <div class="gallery-item-inner"><span class="gallery-item-placeholder">[ Home Image ]</span></div>
-        <div class="gallery-item-label"><span>Grandview Heights</span><h4>Modern Craftsman</h4></div>
+        <div class="gallery-item-inner"><img src="https://tuckermanhomegroup.com/images/Blog/d444d.png" alt="Interior Design"></div>
+        <div class="gallery-item-label"><span>Featured</span><h4>Interior Design</h4></div>
       </div>
       <div class="gallery-item">
-        <div class="gallery-item-inner"><span class="gallery-item-placeholder">[ Home Image ]</span></div>
-        <div class="gallery-item-label"><span>Worthington</span><h4>Estate Home</h4></div>
+        <div class="gallery-item-inner"><img src="https://tuckermanhomegroup.com/images/Blog/a22a.png" alt="Living Space"></div>
+        <div class="gallery-item-label"><span>Featured</span><h4>Living Spaces</h4></div>
       </div>
       <div class="gallery-item">
-        <div class="gallery-item-inner"><span class="gallery-item-placeholder">[ Home Image ]</span></div>
-        <div class="gallery-item-label"><span>Dublin</span><h4>Contemporary Build</h4></div>
+        <div class="gallery-item-inner"><img src="https://tuckermanhomegroup.com/images/2025/z6.png" alt="2025 Custom Home"></div>
+        <div class="gallery-item-label"><span>Coming Soon</span><h4>2025 Custom Build</h4></div>
       </div>
     </div>
   </div>
