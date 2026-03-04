@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init)",
+      "Bash(git branch -M main)",
+      "Bash(git remote add origin https://github.com/derzonm21/client-sites.git)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"Initial site with Tuckerman prototype\")"
+    ]
+  }
+}

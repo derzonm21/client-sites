@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Built by Derzon</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 32px;
+  text-align: center;
+}
+
+.wordmark {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 64px;
+}
+
+.name {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.name strong {
+  font-weight: 600;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 0 auto 24px;
+}
+
+.tagline {
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 400;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.5px;
+  margin-bottom: 56px;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background: #fff;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+  background: rgba(255,255,255,0.85);
+}
+
+footer {
+  padding: 32px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.18);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="wordmark">builtbyderzon.com</div>
+  <h1 class="name"><strong>Matthew</strong> Derzon</h1>
+  <div class="divider"></div>
+  <p class="tagline">Modern websites, built fast.</p>
+  <a href="mailto:matt@builtbyderzon.com" class="contact-link">Get in touch</a>
+</div>
+
+<footer>&copy; 2026 Built by Derzon</footer>
+
+</body>
+</html>
